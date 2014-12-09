@@ -1,0 +1,39 @@
+Ext.define('AM.view.TesterBugTree',{
+	extend:'Ext.tree.Panel',
+	alias:'widget.testerbugtree', 
+	boder:0,
+	rootVisible:false,
+	store:new Ext.data.TreeStore({
+	root:{
+	     leaf:false,
+		 children:[{
+		 	  text:'新增BUG',
+			  id:'add_bug_item',
+			  leaf:true,
+			  icon:'image/bug_add.png'
+	     },{
+			  text:'待完善BUG',
+			  id:'complete_bug_item',
+			  leaf:true,
+			  icon:'image/bug_edit.png'
+		 },{
+			  text:'待测试BUG',
+			  id:'test_bug_item',
+			  leaf:true,
+			  icon:'image/user_comment.png'
+		 },{
+			  text:'已提交BUG',
+			  leaf:true,
+			  id:'submited_bug',
+			  icon:'image/user_comment.png'
+		 },{
+			 text:'Bug查询',
+			 leaf:true,
+			 id:'search_bug_item',
+			 icon:'image/application_view_tile.png'
+		 }]
+	},
+	id:'testerbug_treepanel',
+	useArrows:true
+	})
+});

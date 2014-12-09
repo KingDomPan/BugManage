@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bugPrioritys>
+	<bugPriority>
+		<id>1</id>
+		<name>立即解决</name>
+	</bugPriority>
+	<bugPriority>
+		<id>2</id>
+		<name>正常排队</name>
+	</bugPriority>
+	<bugPriority>
+		<id>3</id>
+		<name>不紧急</name>
+	</bugPriority>
+</bugPrioritys>

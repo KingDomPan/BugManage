@@ -1,0 +1,19 @@
+Ext.define('AM.store.ProjectManageStore',{
+	extend:'Ext.data.TreeStore',
+	root:{
+		leaf:false,
+		children:[{
+			text:'项目信息管理',
+			id:'projectmanage_item',
+			leaf:true
+		},{
+			text:'项目版本管理',
+			id:'bugversion_item',
+			leaf:true
+		},{
+			text:'项目信息统计',
+			id:'projectstatistics_item',
+			leaf:true
+		}]
+	}
+});

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userStates>
+	<userState>
+		<id>1</id>
+		<name>在职</name>
+	</userState>
+	<userState>
+		<id>2</id>
+		<name>病假</name>
+	</userState>
+	<userState>
+		<id>3</id>
+		<name>退休</name>
+	</userState>
+	<userState>
+		<id>4</id>
+		<name>已辞职</name>
+	</userState>
+</userStates>

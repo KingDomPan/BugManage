@@ -1,0 +1,10 @@
+Ext.define('AM.store.ReplicatorStore',{
+    extend:'Ext.data.TreeStore',
+    proxy:{
+       type:'ajax',
+       url:'Replicator.jsp',
+       reader:{
+           type:'json'
+      }
+   }
+});

@@ -1,0 +1,24 @@
+Ext.define('AM.store.BugHandleStore',{
+	extend:'Ext.data.TreeStore',
+	root:{
+		leaf:false,
+		children:[{
+			text:'待分配',
+			id:'ToBeAssigned_item',
+			leaf:true
+		},{
+			text:'重分配',
+			id:'ReAssign_item',
+			leaf:true
+		},{
+			text:'已分配',
+			id:'Assigned_item',
+			leaf:true
+		},{
+			text:'Bug查询',
+			id:'Search_item',
+			leaf:true
+		}]
+	}
+	
+});

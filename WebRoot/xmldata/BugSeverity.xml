@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bugSevertitys>
+	<bugSevertity>
+		<id>1</id>
+		<name>Critical</name>
+	</bugSevertity>
+	<bugSevertity>
+		<id>2</id>
+		<name>Major</name>
+	</bugSevertity>
+	<bugSevertity>
+		<id>3</id>
+		<name>Normal</name>
+	</bugSevertity>
+	<bugSevertity>
+		<id>4</id>
+		<name>Minor</name>
+	</bugSevertity>
+	<bugSevertity>
+		<id>5</id>
+		<name>Enhancement</name>
+	</bugSevertity>
+</bugSevertitys>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bugReasons>
+	<bugReason>
+		<id>1</id>
+		<name>回退</name>
+	</bugReason>
+	<bugReason>
+		<id>2</id>
+		<name>延期</name>
+	</bugReason>
+	<bugReason>
+		<id>3</id>
+		<name>关闭</name>
+	</bugReason>
+</bugReasons>

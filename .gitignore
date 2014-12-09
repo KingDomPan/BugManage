@@ -1,0 +1,14 @@
+.classpath
+.project
+.springBeans
+.settings/
+target/
+*.iml
+.idea/
+*.jar
+bin/
+.myeclipse/
+.mymetadata
+lib/
+classes/
+extjs-4.1.0/

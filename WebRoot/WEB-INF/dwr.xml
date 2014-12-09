@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN" "http://getahead.org/dwr/dwr30.dtd">
+
+<dwr>
+
+	<allow>
+
+		<create creator="new" javascript="propHandler">
+			<param name="class" value="com.us.bug.qd.tools.PropHandler" />
+		</create>
+
+		<create creator="new" javascript="PropHandler">
+			<param name="class" value="com.us.bug.qd.tools.PropHandler"></param>
+		</create>
+
+	</allow>
+
+</dwr>

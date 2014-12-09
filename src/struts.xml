@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.action.excludePattern" value="/dwr/.*,/dwr/test/.*" />
+
+	<package name="zw" extends="struts-default" namespace="/">
+		<action name="getCode" class="com.us.bug.qd.action.SafeCodeAtion" method="getCodeImg">
+		</action>
+		<action name="login" class="userAction" method="login">
+		</action>
+		<action name="islogined" class="userAction" method="isLogined">
+		</action>
+		<action name="loginout" class="userAction" method="loginOut">
+		</action>
+	</package>
+
+	<package name="zw_modular" extends="struts-default" namespace="/modular">
+		<!--获取模块下拉数据 -->
+		<action name="getModulars" class="modularAction" method="getModularById">
+		</action>
+		<action name="getModularsById" class="modularAction" method="getModularsById">
+		</action>
+		<action name="add" class="modularAction" method="add">
+		</action>
+		<action name="update" class="modularAction" method="update">
+		</action>
+	</package>
+
+	<package name="zw_version" extends="struts-default" namespace="/version">
+		<!--获取项目版本下拉数据 -->
+		<action name="getVersions" class="versionAction" method="getVersionByProjectId">
+		</action>
+		<action name="getVersionsByProjectId" class="versionAction"
+			method="getVersionsByProjectId">
+		</action>
+		<action name="add" class="versionAction" method="add">
+		</action>
+
+	</package>
+
+	<package name="zw_bug" extends="struts-default" namespace="/bug">
+		<!--新增Bug -->
+		<action name="add" class="bugAction" method="save">
+		</action>
+		<action name="getSubmitedBug" class="bugAction" method="getSumbittedBugByUserId">
+		</action>
+		<action name="getToBeCompletedBugByPage" class="bugAction"
+			method="getToBeCompletedBugByPage">
+		</action>
+		<action name="getToBeAssignBugByUserId" class="bugAction"
+			method="getToBeAssignBugByUserId">
+		</action>
+		<action name="getAssignedBugByPage" class="bugAction"
+			method="getAssignedBugByPage">
+		</action>
+		<action name="updateSubmited" class="bugAction" method="updateSubmited">
+		</action>
+		<action name="getToBeRepairedByPage" class="bugAction"
+			method="getToBeRepairedByPage">
+		</action>
+		<action name="closeBug" class="bugAction" method="closeBug">
+		</action>
+		<action name="getAllBugs" class="bugAction" method="getAllBugs">
+		</action>
+	</package>
+
+	<package name="zw_project" extends="struts-default" namespace="/project">
+		<!--获取模块下拉数据 -->
+		<action name="getProjects" class="projectAction" method="getProjectByPage">
+		</action>
+		<action name="getProjectsByPage" class="projectAction" method="getProjectsByPage">
+		</action>
+		<action name="getProjectAndModularAndDeveloper" class="projectAction"
+			method="getProjectAndModularAndDeveloper">
+		</action>
+		<action name="add" class="projectAction" method="add">
+		</action>
+		<action name="update" class="projectAction" method="update">
+		</action>
+	</package>
+	<package name="zw_user" extends="struts-default" namespace="/user">
+		<action name="getUserByPage" class="userAction" method="getUserByPage">
+		</action>
+		<action name="save" class="userAction" method="save">
+		</action>
+		<action name="update" class="userAction" method="update">
+		</action>
+		<action name="getMangersInPosition" class="userAction"
+			method="getMangersInPosition">
+		</action>
+		<action name="getDevelopersInPosition" class="userAction"
+			method="getDevelopersInPosition">
+		</action>
+
+	</package>
+
+
+
+	<package name="qd" extends="struts-default" namespace="/qd">
+		<action name="add" class="addAction" method="addUsers">
+		</action>
+	</package>
+
+	<package name="qd_task" extends="struts-default" namespace="/task">
+		<action name="assignBug" class="taskAction" method="assignBug">
+		</action>
+	</package>
+
+	<package name="qd_bugReason" extends="struts-default"
+		namespace="/bugReason">
+		<action name="bugOperate" class="bugReasonAction" method="bugOperate">
+		</action>
+	</package>
+
+
+	<package name="qd_repair" extends="struts-default" namespace="/repair">
+		<action name="add" class="repairAction" method="add">
+		</action>
+		<action name="getDeveloperSubmitedBugByUserId" class="repairAction"
+			method="getDeveloperSubmitedBugByUserId">
+		</action>
+		<action name="getToBeCheckedBugByUserId" class="repairAction"
+			method="getToBeCheckedBugByUserId">
+		</action>
+	</package>
+	<package name="qd_taskReason" extends="struts-default"
+		namespace="/taskReason">
+		<action name="add" class="taskReasonAction" method="add">
+		</action>
+		<action name="getReAssignBugByUserId" class="taskReasonAction"
+			method="getReAssignBugByUserId">
+		</action>
+	</package>
+	<package name="qd_repairReason" extends="struts-default"
+		namespace="/repairReason">
+		<action name="add" class="repairReasonAction" method="add">
+		</action>
+		<action name="getReRepairBugByUserId" class="repairReasonAction"
+			method="getReRepairBugByUserId">
+		</action>
+	</package>
+
+
+</struts>
+	

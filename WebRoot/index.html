@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Bug管理系统</title>
+</head>
+<body>
+<link rel="stylesheet" style="text/css" href="CSS/style.css"></link>
+<div id="loading-mask" style=""></div>
+<div id="loading">
+	<div class="loading-indicator"><img src="image/large-loading.gif" width="32" height="32" style="margin-right:8px;float:left;vertical-align:top;"/>BUG管理信息系统<br/>
+	<span id="loading-msg">开始加载...</span></div>
+</div>
+<link rel="stylesheet" style="text/css" href="extjs-4.1.0/resources/css/ext-all.css"></link>  
+<link rel="stylesheet" style="text/css" href="CSS/example.css"></link>
+<link rel="stylesheet" style="text/css" href="CSS/striperow.css"></link>
+<script type="text/javascript">document.getElementById('loading-msg').innerHTML = '加载核心 API...(1/4)';</script>
+<script type="text/javascript" src="extjs-4.1.0/ext-all-debug.js"></script>   
+<script type="text/javascript">document.getElementById('loading-msg').innerHTML = '加载 扩展组件...(2/4)';</script>  
+<script type="text/javascript" src="extjs-4.1.0/examples/shared/examples.js"></script>     
+<script type="text/javascript" src="extjs-4.1.0/examples/ux/RowExpander.js"></script>
+<script type="text/javascript" src="extjs-4.1.0/locale/ext-lang-zh_CN.js"></script>
+<script type="text/javascript">document.getElementById('loading-msg').innerHTML = '系统初始化...(3/4)';</script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript">document.getElementById('loading-msg').innerHTML = '加载完成,正在验证...(4/4)';</script>
+<!-- <script type='text/javascript' src='dwr/engine.js'></script> -->
+<!-- <script type='text/javascript' src='dwr/util.js'></script> -->
+<!-- service.js为dwr自动生成的js文件  文件名和dwr中配置的javascript属性一样 -->
+<!-- <script type='text/javascript' src='dwr/interface/propHandler.js'></script> -->
+</body>
+</html>

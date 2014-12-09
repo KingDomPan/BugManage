@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bugEnvironments>
+	<bugEnvironment>
+		<id>1</id>
+		<name>WINDOW 2003</name>
+	</bugEnvironment>
+	<bugEnvironment>
+		<id>2</id>
+		<name>UNIX</name>
+	</bugEnvironment>
+	<bugEnvironment>
+		<id>3</id>
+		<name>LIUNX</name>
+	</bugEnvironment>
+	<bugEnvironment>
+		<id>4</id>
+		<name>XP</name>
+	</bugEnvironment>
+	<bugEnvironment>
+		<id>5</id>
+		<name>WIN 7</name>
+	</bugEnvironment>
+</bugEnvironments>

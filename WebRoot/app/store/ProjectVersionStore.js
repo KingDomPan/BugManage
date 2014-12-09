@@ -1,0 +1,15 @@
+Ext.define('AM.store.ProjectVersionStore',{
+    extend:'Ext.data.Store',
+    proxy:{
+       type:'ajax',
+       url:'version/getVersions.action',
+       reader:{
+           type:'json'
+      }
+   },
+   fields:[{
+	   name:'versionId'
+   },{
+	   name:'versionName'
+   }]
+});

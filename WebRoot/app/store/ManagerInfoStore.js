@@ -1,0 +1,11 @@
+Ext.define('AM.store.ManagerInfoStore',{
+    extend:'Ext.data.Store',
+    model:'AM.model.StaffInfoModel',
+    proxy:{
+       type:'ajax',
+       url:'user/getMangersInPosition.action',
+       reader:{
+           type:'json'
+      }
+   }
+});

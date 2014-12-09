@@ -1,0 +1,9 @@
+Ext.define('AM.view.ManagerBugTree',{
+	extend:'Ext.tree.Panel',
+	alias:'widget.managerbugtree', 
+	boder:0,
+	rootVisible:false,
+	store:'BugHandleStore',
+	id:'managerbugtree',
+	useArrows:true
+});

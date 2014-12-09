@@ -1,0 +1,19 @@
+Ext.define('AM.store.StaffManageStore',{
+	extend:'Ext.data.TreeStore',
+	root:{
+		leaf:false,
+		children:[{
+			text:'员工信息管理',
+			id:'staffmanage_item',
+			leaf:true
+		},{
+			text:'员工信息统计',
+			id:'staffstatistics_item',
+			leaf:true
+		},{
+			text:'权限管理',
+			id:'authoritysmanage_item',
+			leaf:true
+		}]
+	}
+});
